@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 /* eslint-disable no-unreachable */
 
 import { useState } from 'react';
@@ -24,7 +25,12 @@ export function Form(props) {
 
     let test = JSON.parse(localStorage.getItem(SAVED_ITEMS));
     let oldId = 0;
-    test.map(item => oldId = item.id);
+    test.map((item, index) => {
+      < span key={index}>
+        {oldId = item.id}
+      </ span>
+    });
+
 
     return oldId + 1;
   }
