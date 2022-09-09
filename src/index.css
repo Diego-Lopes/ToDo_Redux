@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+html {
+  background-color: #c4c4c4;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .75em;
+
+  margin-top: 1em;
+
+  transition: all 540ms ease-in-out;
+
+}
+.list {
+  width: 100%;
+}
+
+.lista {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0.8em;
+  background-color: #fff;
+
+
+  transition: all 540ms ease-in-out;
+
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.15);
+  
+}
+
+.lista:hover{
+  transform: scale(1.05);
+  transition: all 240ms ease-in-out;
+}
+
+.lista button {
+  border: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  background: transparent;
+  font-size: 1em;
+  font-weight: 700;
+
+  transition: all 550ms ease-in-out;
+}
+
+.lista button:nth-child(2) {
+  padding: 8px;
+}
+
+.lista button:nth-child(2):hover {
+  background-color: red;
+  color: white;
+  transition: all 350ms ease-in-out;
+}
+
+
+.box-button{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+
+button {
+  cursor: pointer;
+}
