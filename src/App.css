@@ -1,6 +1,6 @@
 .container {
   margin-inline: auto;
-  width: 40em;
+  width: min(40em, fit-content);
 }
 
 
@@ -19,6 +19,19 @@
 .header {
   width: calc(100% - 35%);
 
+
+}
+
+.list {
+  width: 100%;
+}
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 }
 
